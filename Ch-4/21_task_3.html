@@ -1,0 +1,58 @@
+<!-- write html && css script to design a sign-up from having fields like username, password, choices of sport like
+ cricket, badminton, tennis include gender feild, submit & reset button follow below req. 
+ 1. while hovering username & password it's bg should turn yellow colour and pink colour respectively
+ 2. while clicking sports & gender fields text should turn to red colour
+ 3. both submit and reset button text shoult turn blue while hovering
+ 4. use appropriate selecters -->
+
+<html lang="en">
+  <head>
+    <style>
+      input[type="text"]:hover {
+        background-color: yellow;
+      }
+      input[type="password"]:hover {
+        background-color: pink;
+      }
+      label:active {
+        color: blue;
+      }
+      #i1:hover {
+        color: blueviolet;
+      }
+      #i2:active {
+        color: brown;
+      }
+      #l1:active {color: blue;}
+      
+      input[type="submit"]:hover{
+        background-color: cornflowerblue;
+      }
+      input[type="reset"]:hover{
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend align="center">Sign-up</legend>
+        User Name : <input type="text" placeholder="Enter Username" /> <br />
+        <br />
+        Password : <input type="password" /> <br />
+        <br />
+        Sports : <label><input type="checkbox" />cricket</label>
+        <label id="i1" id> <input type="checkbox" />badminton</label>
+        <label id="i2"> <input type="checkbox" />tennis </label>
+        <br />
+        Gender : 
+        <label id="l1"><input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female </label>
+        <br /> <br>
+
+        <input type="submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>

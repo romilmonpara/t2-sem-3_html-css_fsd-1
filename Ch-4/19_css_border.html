@@ -1,0 +1,41 @@
+<!-- CSS Border -->
+<!-- 1.border-style
+    2. border-color
+    3. border-width -->
+
+<html lang="en">
+    <head>
+        <style>
+            .s1{border-style: dotted;}
+            .s2{border-style: dashed;}
+            .s3{border-style: double;}
+            .s4{border-style: groove;}
+            .s5{border-style: solid dashed dotted double;}
+            /*                top | right | bottom | left */
+
+            .c1{border-style: solid;
+                border-color: red;
+                border-width: medium;}
+            .c2{border-style: dashed;
+                border-color: blue;
+                border-width: 5px;}
+            .shorthand{border-bottom: 10px solid red;}
+        </style>
+    </head>
+    <body>
+        <p class="s1">Dotted</p>
+        <p class="s2">Dashed</p>
+        <p class="s3">Double</p>
+        <p class="s4">Groove</p>
+        <p class="s5">Solid Dashed Dotted Double</p>
+        <p class="c1">Solid Red && width-mediun</p>
+        <p class="c2">Dashed Blue && width-5px</p>
+        <p class="shorthand">Shorthand</p>
+    </body>
+</html>
+
+<!-- Note(border shorthand) :-
+    Property -> border-width, border-style, border-color
+    border : 5px solid red 
+    border-left : 10px solid red
+    border-botton : 10px solid red -->

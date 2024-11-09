@@ -1,0 +1,56 @@
+<!-- Pseudo Element
+ 1. First line
+ 2. First word
+ 3. before
+ 4. after
+ 5. marker
+ 6.selection -->
+
+<!-- Sysntex :
+ selector :: pseudo element {property:value;} -->
+
+<html>
+    <head>
+        <style>
+            p::first-line{
+                font-size: 20px;
+                font-style: italic;
+                font-weight: bold;
+                color: red;
+            }
+            p::first-letter{
+                font-size: 100px;
+                color: blue;
+            }
+            h1::before{
+                content: url("nature_1.jpg");
+            }
+            h2::after{
+                content: url("nature_1.jpg");
+            }
+            ::marker{color: red;
+            font-size: 20px;}
+
+            ::selection{
+                color: green;
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eligendi sint accusantium, commodi sequi 
+            itaque laborum sapiente earum totam magnam quae, neque vitae, saepe laboriosam porro consectetur autem odit
+            cum quas vero eveniet labore dolorem! Obcaecati id in nihil saepe!</p>
+        <!-- <h1>Hello</h1>
+        <h2>Hiee</h2> -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+        <p>Hello </p>
+    </body>
+</html>
