@@ -1,0 +1,35 @@
+<!-- Z-index property -->
+ <!-- 1. auto
+  2. number
+  3. initial
+  4. inherit -->
+
+<html>
+    <head>
+        <style>
+            div{
+                position: fixed;
+                width: 400px;
+                height: 300px;
+                background-color: bisque;
+            }
+            img{
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                z-index: 1;
+            }
+            h1{
+                position: relative;
+                color: grey;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Image Demo</h1>
+            <img src="nature_1.jpg">
+        </div>
+    </body>
+</html>

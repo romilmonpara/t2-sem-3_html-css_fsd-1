@@ -1,0 +1,57 @@
+<!-- Write html & css code to design registration having field like name, password, contect no., gender,
+ submit & reset buttom follow below req.
+ 1. while clicking on name text bg-color of it's input field change to light green
+ 2. while hovering on password & contect no. text font size of it's input fields will increase repectively.
+ 3. while on gender field bg-color of the text should change to blue
+ 4. both submit & reset text should bold and italic and small caps while hovering
+ -> use appropriate selectors and pseudo classes.  -->
+
+<html>
+    <head>
+        <style>
+            #i1:hover{
+                background-color: lightgreen;
+            }
+            #i2:hover{
+               font-size: 50px;
+    
+            } 
+            #i3:active{
+                background-color: red;
+            }
+            input[type="submit"]:hover{
+                font-style: italic;
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+            input[type="reset"]:hover{
+                font-style: italic;
+                font-weight: bold;
+                font-variant: small-caps;
+            }
+            form{
+                background-image: url("nature_1.jpg");
+                min-height: 250px;
+                min-width: 180px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                height: 40%;
+                -webkit-box-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" align="right">
+            <fieldset style="border: none;">
+                <legend style="" align="righ">Form</legend>
+                Name : <input type="text" id="i1"> <br> <br>
+                <label id="i2">Password : <input type="password"> </label> <br><br>
+                <label id="i2">Contact : <input type="text" maxlength="10"> </label><br><br>
+                <label id="i3" style="color: aliceblue;">Gender : </label> <label id="i3" style="color: aliceblue;"><input type="radio" name="g">Male</label> 
+                        <label id="i3" style="color: aliceblue;"><input type="radio" name="g">Female</label> <br><br>
+                <input type="submit"> <input type="reset"> 
+            </fieldset>
+        </form>
+    </body>
+</html>

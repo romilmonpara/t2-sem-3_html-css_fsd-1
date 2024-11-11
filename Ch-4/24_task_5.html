@@ -1,0 +1,35 @@
+<!-- CSS in sepate file -->
+<!-- 
+1. Write 1 para. using p tag, color of line of para. shold be green and text is italic.
+2. when you select text of heading, background color of selected text will become grey. 
+3. create 1 order list which start with capital roman latters colours of list should be green & font size - 30px -->
+
+<html>
+    <head>
+        <style>
+            p::first-line{
+                color: green;
+                font-style: italic;
+            }
+            h1::selection{
+                background-color: grey;
+            }
+            ::marker{
+                color: green;
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Lorem Paragraph</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident at fugit eos illum delectus iusto adipisci vitae. Assumenda possimus, 
+            ipsa magni distinctio quia necessitatibus dolor repellendus obcaecati corporis nulla error, dolore, eveniet vitae excepturi tempore velit a 
+            facilis quam!</p>
+
+        <ol type="I">
+            <li>Name</li>
+            <li>Roll No.</li>
+        </ol>
+    </body>
+</html>
