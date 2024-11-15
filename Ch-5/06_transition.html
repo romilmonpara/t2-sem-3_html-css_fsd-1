@@ -1,0 +1,31 @@
+<!-- CSS Transision
+ 1. transition - width | height
+ 2. transition-delay
+ 3. transition-duration 
+ 
+ value seconds -->
+
+<html>
+    <head>
+        <style>
+            div{
+                background-color: red;
+                height: 100px;
+                width: 100px;
+                transition: width 1s;
+            }
+            #d1{
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+                transition: width 1s;
+            }
+            div:hover{width: 300px;}
+            #d1:hover{width: 300px;}
+        </style>
+    </head>
+    <body>
+        <div> </div>
+        <div id="d1"> </div>
+    </body>
+</html>

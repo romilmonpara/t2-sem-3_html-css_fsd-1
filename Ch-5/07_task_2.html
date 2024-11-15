@@ -1,0 +1,31 @@
+<!-- Write html & csss task to design 1 signup form having field like username, password, submit and reset button while hovering each control, it should expnad be around 30% hor. & ver. with delay 2s expantion should take place in 4s.   -->
+
+<html>
+    <head>
+        <style>
+            input {
+            background-color: yellow;
+            height: 30px;
+            width: 150px;
+            transition: 2s;
+            transition-delay: 1s;
+            }
+
+            input:hover{width: 300px;
+            height: 150px;}
+        </style>
+    </head>
+    <body>
+        <form>
+          <fieldset>
+            <legend align="center">Sign-up</legend>
+            User Name : <input type="text" placeholder="Enter Username" /> <br />
+            <br />
+            Password : <input type="password" /> <br />
+            <br />
+            <input type="submit"/>
+            <input type="reset" value="Reset" />
+          </fieldset>
+        </form>
+    </body>    
+</html>
