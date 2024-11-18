@@ -1,0 +1,54 @@
+<!-- Animation
+ - Property
+ 1. animation
+ 2. aniamtion-duration
+ 3. animation-delay
+ 4. animation-iteration-count
+ 5. animation-direction -->
+<!-- 
+ @ Keyframes
+ - when you specify css style inside the @keyframe rule.
+ - animation will gradually change from current style to new style.
+ - Note -> animation-duration property not define then its value 0.(zero) -->
+
+<html>
+    <head>
+        <style>
+            div{animation-name: example;
+            width: 100px;
+            height: 100px;
+            /* background-color: blanchedalmond; */
+            background-color: red;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-delay: 1s;
+            animation-direction: normal;
+            }
+            @keyframes example{
+                from{background-color: red;}
+                to{background-color: blue;}
+            }
+
+            #d1{
+            animation-name:  ex2;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                animation-duration: 5s;
+                border-top-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+            @keyframes ex2{
+                0%{background-color: red;}
+                25%{background-color: yellow;}
+                50%{background-color: blue}
+                100%{background-color: green}
+            }
+        </style>
+    </head>
+    <body>
+        <div> </div>
+        <br>
+        <div id="d1"> </div>
+    </body>
+</html>

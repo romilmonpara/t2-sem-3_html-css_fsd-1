@@ -1,0 +1,54 @@
+<!-- WAP html css code that add some text 2 img in the bottom left and top right corner also use opacity property of img to make and img transprent -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Text and Opacity</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            position: relative;
+        }
+        img {
+            width: 400px;
+            height: 300px;
+            opacity: 0.5; /* Adjust opacity here */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+        }
+        img:hover {
+            opacity: 1; /* Full opacity on hover */
+        }
+        .text-bottom-left, .text-top-right {
+            position: absolute;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .text-bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        .text-top-right {
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="bmw.jfif" alt="Image with Text">
+        <div class="text-bottom-left">Bottom Left Text</div>
+        <div class="text-top-right">Top Right Text</div>
+    </div>
+</body>
+</html>

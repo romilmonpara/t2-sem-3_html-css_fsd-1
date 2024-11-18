@@ -1,0 +1,28 @@
+<!-- Write a html & css script to design one banner of advertisement using p tag that text of advertise sholud move continuslly from left end to right end return back from r to l end use r and font-size 50px for text adv. should begin after 1s of loading page -->
+
+<html>
+    <head>
+        <style>
+            .new{
+                animation-name: ne;
+                width: 100px;
+                height: 100px;
+                font-size: 50px;
+                position: relative;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+            @keyframes ne{
+                0%{color: blue; left: 0px; top: 0px;}
+                100%{color: red; left: 1166px; top: 0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">CSS Advertisement</h1>
+        <div class="new">Advertisement
+            <img src="r.png" alt="">
+        </div>
+    </body>
+</html>

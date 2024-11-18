@@ -1,0 +1,44 @@
+<!-- CSS Display Property 
+ -> Specifies display behaviour of an element.
+ -> posible vlaue
+    1. inline
+    2. block
+    3. inline-block
+    4. none -->
+<!-- 
+1. Inline -> Display as element as an inline element(like span). Any height & width properties will have no effect.
+2. Block -> Display an element as a block level element (like P). It starts on a new line, and take up the whole width.
+3. inline-block -> Display an element as an inline-level block container.(you can apply height & width values.)
+4. none -> The element is completely removed. -->
+
+<html>
+    <head>
+        <style>
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: inline;
+                color: red;
+            }
+            .p3{
+                display: block;
+                border: 1px solid red;
+                color: red;
+            }
+            .p4{
+                display: inline-block;
+                border: 1px solid red;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="p1">P1</p>
+            <p class="p2">P2</p>
+            <p class="p3">P3</p>
+            <p class="p4">P4</p>
+        </div>
+    </body>
+</html>
