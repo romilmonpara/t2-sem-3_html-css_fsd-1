@@ -1,0 +1,41 @@
+<!-- using css variable -->
+
+<html>
+    <head>
+        <style>
+            :root{
+                --b: bisque;
+                --w: grey;
+                --l: left;
+                --blue: blue;
+            }
+            h1{
+                --b1: cornsilk;
+                background: var(--b1);
+                --he: black;
+                color: var(--he);
+            }
+            div{
+                color: var(--w);
+                background: var(--b);
+                text-align: var(--l);
+                padding: 5px;
+                border: 2px solid var(--blue);
+            }
+            body{
+                padding: 10px;
+                background-color: lightcyan;
+                border: 2px solid red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome</h1> <hr>
+            <a href="https://romilmonpara.blogspot.com/" target="_blank">Home</a> <br>
+            <a href="#">About</a> <br>
+            <a href="#">Others</a> 
+        </div>
+    </body>
+</html>

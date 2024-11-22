@@ -1,0 +1,55 @@
+<!-- Write a html & css script to design 3 sections having 20% height & full width apply following requierments 
+ 1.each section has a title and a paragraph by hovering each section it should be enclosed by a red border.
+ 2. by hovering each title of each section it should be converted to blue color.
+ 3. by hovering para. of each section it should take 2cm of begining space and letter of each word capital.
+ 4. store all css properties in globel css variable. -->
+
+<!-- embeded = external -->
+<html>
+    <head>
+        <style>
+            :root{
+                --b: bisque;
+                --w: grey;
+                --l: left;
+                --blue: blue;
+                --red: red;
+            }
+            body{
+                padding: 10px;
+            }
+            div{
+                color: var(--w);
+                background: var(--b);
+                text-align: var(--l);
+                padding: 5px;
+                
+            }
+            div:hover{
+                border: 3px solid var(--red);
+            }
+            h1:hover{
+                border: 3px solid var(--blue);
+            }
+            p:hover{
+                text-indent: 2cm;
+                text-transform: uppercase;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Paragraph 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus voluptates, blanditiis, quia temporibus ad optio neque illum, amet mollitia labore et! Sint.</p>
+        </div>
+        <div>
+            <h1>Paragraph 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus voluptates, blanditiis, quia temporibus ad optio neque illum, amet mollitia labore et! Sint.</p>
+        </div>
+        <div>
+            <h1>Paragraph 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus voluptates, blanditiis, quia temporibus ad optio neque illum, amet mollitia labore et! Sint.</p>
+        </div>
+    </body>
+</html>

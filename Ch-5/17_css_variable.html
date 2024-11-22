@@ -1,0 +1,32 @@
+<!-- CSS Variable
+ - global varible || - local varible -->
+<!-- Syntex :
+ :root{
+    --varname:value;
+ } 
+    -->
+
+<html>
+    <head>
+        <style>
+            :root{
+                --b:bisque;
+                --w: grey;
+                --xyz:center;
+            }
+            h1{
+                --b1:red;
+                color:var(--b1)
+            }
+            p{
+                color: var(--w);
+                background-color: var(--b);
+                text-align: var(--xyz);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Any sus?</h1>
+        <p>Good Morning Guyssss!!</p>
+    </body>
+</html>

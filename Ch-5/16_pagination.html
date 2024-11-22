@@ -1,0 +1,41 @@
+<!-- Design following using css pagination & the add the transiton property to the page links create a transition effect to hover -->
+
+<html>
+    <head>
+        <style>
+            .pagination{
+                display: inline-block;
+            }
+            .pagination a{
+                color: black;
+                text-decoration: none;
+                padding: 20px;
+                border: 1px solid red;
+                border-radius: 5px;
+                font-size: 30px;
+            }
+
+            .pagination a.active{
+                background-color: green;
+                color: white;
+            }
+
+            .pagination a:hover:not(.active){
+                background-color: rgb(162, 245, 162);
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Simple Pagination</h1>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </body>
+</html>
