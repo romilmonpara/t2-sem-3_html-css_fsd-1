@@ -1,0 +1,80 @@
+<!-- Write html & css script to design 2 tables having 3 rows && 3 cols of 50% width each horizontaly adjusted to each other they have blue and green bg-color respectivly if page turns to potraite mode then bg-color of table should be swap responsive concept must be observe while shrinking width of page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tables</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 10px;
+}
+
+table {
+    width: 48%;
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.blue-table {
+    background-color: blue;
+    color: white;
+}
+
+.green-table {
+    background-color: green;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blue-table {
+        background-color: green;
+    }
+
+    .green-table {
+        background-color: blue;
+    }
+
+    table {
+        width: 90%; /* Adjust table width for smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table class="blue-table">
+            <tr><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td></tr>
+        </table>
+        <table class="green-table">
+            <tr><td>A</td><td>B</td><td>C</td></tr>
+            <tr><td>D</td><td>E</td><td>F</td></tr>
+            <tr><td>G</td><td>H</td><td>I</td></tr>
+        </table>
+    </div>
+</body>
+</html>

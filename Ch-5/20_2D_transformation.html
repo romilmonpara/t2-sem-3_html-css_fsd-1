@@ -1,0 +1,58 @@
+<!-- 2-D Transformation
+ 1. translate()
+ 2. rotate()
+ 3. skewX() -> skews along the x-axis by given angles.
+ 4. skewY()
+ 5. skew()
+ 6. ScaleX()
+ 7. ScaleY()
+ 8. Scale() -->
+
+<html>
+    <head>
+        <style>
+            #d1{
+                border: 2px solid red;
+                width: 20%;
+                height: 20%;
+                transition-duration: 1.5s;
+            }
+            #d2{
+                border: 2px solid blue;
+                width: 20%;
+                height: 20%;
+                transition-duration: 1.5s;
+            }
+            /* div{
+                border: 2px solid red;
+                width: 20%;
+                height: 20%;
+                transition-duration: 1.5s;
+            } */
+            /* div:hover{
+                transform: rotate(20deg);
+                transform: rotate(-20deg);
+            } */
+            /* div:hover{
+                transform: translate(180px, 180px);
+                width: 50%;
+                height: 50%;
+            } */
+            /* div:hover{
+                transform: skew(0deg, 180deg);
+                transform: skewX(40deg);
+                transform: skewY(40deg); 
+            } */
+            div:hover{
+                transform: scaleY(0.5);
+            }
+            #d1:hover{
+                transform: scale(0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="d1"></div> <br>
+        <div id="d2"></div>
+    </body>
+</html>

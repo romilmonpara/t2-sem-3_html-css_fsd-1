@@ -1,0 +1,49 @@
+<!-- Write html css script to design 1 table having 3 cols && 5 rows add random data while hovering it should be expanded around 50% horizintly, bg-color and font color will become red & white respecdtively expansion should take place in 2s.  -->
+
+<!DOCTYPE html>
+  <head>
+    <title>Hover Table</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      transition: 2s;
+      text-align: center;
+    }
+    table:hover {
+      transform: scaleX(1.5);
+      background-color: red;
+      color: white;
+    }
+  </style>
+  <body>
+    <table class="hover-table" border="1">
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 4</td>
+        <td>Data 5</td>
+        <td>Data 6</td>
+      </tr>
+      <tr>
+        <td>Data 7</td>
+        <td>Data 8</td>
+        <td>Data 9</td>
+      </tr>
+      <tr>
+        <td>Data 10</td>
+        <td>Data 11</td>
+        <td>Data 12</td>
+      </tr>
+      <tr>
+        <td>Data 13</td>
+        <td>Data 14</td>
+        <td>Data 15</td>
+      </tr>
+    </table>
+  </body>
+</html>

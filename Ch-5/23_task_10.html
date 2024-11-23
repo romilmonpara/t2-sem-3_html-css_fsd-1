@@ -1,0 +1,28 @@
+<!-- Write html css script code to design one banner using any heading tag that heading should move in counter clockwise and complete it's iteration then return back in clockwise on it's starting position use blue color text and effect should begin after 3 second of loading. -->
+ 
+<html>
+    <head>
+        <style>
+            h1{
+                animation-name: h;
+                color: blue;
+                animation-delay: 3s;
+                animation-duration: 5s;
+                animation-direction: alternate;
+                text-align: center;
+            }
+
+            @keyframes h{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Heading</h1>
+    </body>
+</html>
