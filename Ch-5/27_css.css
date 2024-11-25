@@ -1,0 +1,13 @@
+.he1::first-letter{
+    color: red;
+    font-size: 160px;
+    font-style: italic;
+}
+.he1::after{
+    content: url("bmw.jfif");
+}
+
+.he2::before{
+    content: url("bmw.jfif");
+}
+

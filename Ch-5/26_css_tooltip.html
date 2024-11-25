@@ -1,0 +1,33 @@
+<!-- A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element
+ -> property : visibility, width, bg-color, color, text-align -->
+
+<html>
+    <head>
+        <style>
+            .tooltip{
+                display: inline-block;
+                border-bottom: 2px solid red;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;                width: 120px;
+                background-color: beige;
+                color: grey;
+                text-align: center;
+                border-radius: 10px;
+                padding: 5px;
+                position: absolute;
+            }
+            .tooltip:hover .tooltiptext{
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip">
+            HTML 
+            <span class="tooltiptext">
+                hyper text markup language
+                </span>    
+        </div>
+    </body>
+</html>
